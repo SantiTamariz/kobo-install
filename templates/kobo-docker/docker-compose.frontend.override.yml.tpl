@@ -33,7 +33,7 @@ services:
     ${USE_BACKEND_NETWORK}      - kobocat.docker.container
 
   kpi:
-  ${USE_KPI_DEV_MODE}  build: ${KPI_PATH}
+  ${USE_KPI_DEV_MODE}  build: ${KPI_PATH} #hello
   ${USE_KPI_DEV_MODE}  image: kpi:dev.${KPI_DEV_BUILD_ID}
   ${USE_KPI_DEV_MODE}  volumes:
   ${USE_KPI_DEV_MODE}    - ${KPI_PATH}:/srv/src/kpi
